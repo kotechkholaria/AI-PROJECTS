@@ -1,6 +1,8 @@
 import win32com.client
 import os
 import openpyxl
+
+
 outlook = win32com.client.Dispatch(
     "Outlook.Application").GetNameSpace("MAPI")
 inbox = outlook.GetDefaultFolder(6)  # Inbox default index value is 6
